@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-tax-cli"
+version = "0.1.0"
+description = "Audit the context tax of your Claude Code skills; detect silent listing-budget drops; CI gate"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "hao li"}]
+keywords = ["claude-code", "skills", "context-window", "developer-tools", "cli"]
+
+[project.scripts]
+skill-tax-cli = "skill_tax_cli.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/skill-tax-cli"
+
+[tool.setuptools.packages.find]
+include = ["skill_tax_cli*"]
